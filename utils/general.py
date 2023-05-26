@@ -1,10 +1,8 @@
 #libraries
 import streamlit as st
-from PIL import Image
 import pandas as pd
 import folium
 from streamlit_folium import folium_static
-import inflection
 
 def create_map(df):
     df_aux = (df.loc[:, ['latitude','longitude', 'city', 'country_name']]

@@ -1,7 +1,6 @@
 #libraries
 import pandas as pd
 import plotly.express as px
-from PIL import Image
 import numpy  as np
 
 

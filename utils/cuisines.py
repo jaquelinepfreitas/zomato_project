@@ -1,11 +1,6 @@
 #libraries
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
-from PIL import Image
-import matplotlib.pyplot as plt 
-import numpy  as np
-
 
 def top_cuisines (df, key):
         

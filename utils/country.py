@@ -1,6 +1,5 @@
 import pandas as pd
 import plotly.express as px
-from PIL import Image
 
 def cities_by_country (df, countries):
     
