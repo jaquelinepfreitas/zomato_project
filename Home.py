@@ -4,7 +4,6 @@ from PIL import Image
 import pandas as pd
 import folium
 from streamlit_folium import folium_static
-import inflection
 
 from utils import process as pc
 from utils import general as gn
