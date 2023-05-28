@@ -61,7 +61,7 @@ def delivery_by_city (df, countries):
         values='Restaurants',
         color='Delivery', 
         color_continuous_scale='Darkmint', 
-        color_continuous_midpoint = np.average(df_aux['Delivery'] ) )
+        color_continuous_midpoint = np.average(df_aux['Delivery'])
     return fig
 
 def online_order_by_city (df, countries):
