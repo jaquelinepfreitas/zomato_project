@@ -31,17 +31,17 @@ def top_restaurants (df, countries, cuisines, top_n):
     top10 = df.loc[lines, cols].sort_values(['aggregate_rating', 'restaurant_id'], ascending = [False, True])
     return top10.head(top_n)
 
-def top_10_cuisines_best_rating (df, countries, cuisines, top_n):
+def top_10_cuisines_best_rating (df, countries, cuisines):
     lines = (df["cuisines"].isin(cuisines)) & (df["country_name"].isin(countries))
     cuisines_best_rating = (df.loc[lines, ['aggregate_rating', 'cuisines']]
                               .groupby('cuisines')
                               .mean()
                               .sort_values('aggregate_rating', ascending = False)
                               .reset_index()
-                              .head(top_n))
+                              .head(10))
 
     fig = px.bar(
-        cuisines_best_rating.head(top_n),
+        cuisines_best_rating,
         x="cuisines",
         y="aggregate_rating",
         text="aggregate_rating",
@@ -54,17 +54,17 @@ def top_10_cuisines_best_rating (df, countries, cuisines, top_n):
     )
     return fig
 
-def top_10_cuisines_worst_rating (df, countries, cuisines, top_n):
+def top_10_cuisines_worst_rating (df, countries, cuisines):
     lines = (df["cuisines"].isin(cuisines)) & (df["country_name"].isin(countries))
     cuisines_worst_rating = ( df.loc[lines, ['aggregate_rating', 'cuisines']]
                                 .groupby('cuisines')
                                 .mean()
                                 .sort_values(['aggregate_rating'], ascending = True)
                                 .reset_index()
-                                .head(top_n))
+                                .head(10))
 
     fig = px.bar(
-            cuisines_worst_rating.head(top_n),
+            cuisines_worst_rating,
             x="cuisines",
             y="aggregate_rating",
             text="aggregate_rating",

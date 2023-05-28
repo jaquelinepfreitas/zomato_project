@@ -120,12 +120,12 @@ st.markdown("#     ")
 with st.container():
     best , worst = st.columns(2)
     with best:
-        st.markdown(f"#### Top {top_n} highest rated cuisines")
-        fig = cs.top_10_cuisines_best_rating(df, countries, cuisines, top_n)
-        st.plotly_chart( fig, use_container_width=True )
+        st.markdown(f"#### Top 10 highest rated cuisines")
+        fig = cs.top_10_cuisines_best_rating(df, countries, cuisines)
+        st.plotly_chart(fig, use_container_width= True)
                
     with worst:
-        st.markdown(f"#### Top {top_n} worst rated cuisines")
-        fig = cs.top_10_cuisines_worst_rating(df, countries, cuisines, top_n)
+        st.markdown(f"#### Top 10 worst rated cuisines")
+        fig = cs.top_10_cuisines_worst_rating(df, countries, cuisines)
         st.plotly_chart( fig, use_container_width=True )
     
