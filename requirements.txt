@@ -5,3 +5,4 @@ streamlit==1.15.2
 streamlit-folium==0.7.0
 inflection==0.5.1
 numpy==1.23.1
+plotly==5.10.0
