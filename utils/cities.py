@@ -43,7 +43,8 @@ def booking_by_city (df, countries):
         values='Restaurants',
         color='Table_booking', 
         color_continuous_scale='Darkmint', 
-        color_continuous_midpoint = np.average(df_aux['Table_booking'] ))
+        color_continuous_midpoint = np.average(df_aux['Table_booking']),
+        height=100)
     return fig
 
 def delivery_by_city (df, countries):
