@@ -42,12 +42,12 @@ with st.container():
     with col2:
         st.markdown('##### Online ordering restaurants')
         fig = ct.online_order_by_city(df, countries)
-        st.plotly_chart( fig, use_container_width=True)
+        st.plotly_chart(fig)
 
     with col3:
         st.markdown('##### Restaurants that deliver')
         fig = ct.delivery_by_city(df, countries)
-        st.plotly_chart( fig, use_container_width=True)
+        st.plotly_chart(fig)
         
 with st.container():
     col1, col2 = st.columns(2)
