@@ -1,4 +1,4 @@
-# PORTUGUESE VERSION
+# In Portuguese
 # 1. Problema de negócio
 
 A empresa Fome Zero é uma marketplace de restaurantes. Ou seja, seu core
@@ -160,7 +160,7 @@ O objetivo desse projeto é criar um conjunto de gráficos e/ou tabelas que exib
 2. Associar a proporção de restaurantes que aceitam pedido online e realizam entrega e/ou reserva de mesas ao tipo culinário, ao custo da refeição e a nota de avaliação.
 
 
-# ENGLISH VERSION
+# In English
 # 1. Business Problem
 
 Fome Zero is a restaurant marketplace company. In other words, its core business is to facilitate the connection and negotiations between customers and restaurants. Restaurants register within Fome Zero's platform, which provides information such as address, type of cuisine served, availability of reservations, delivery options, and also a rating score for the restaurant's services and products, among other details.
